@@ -82,7 +82,7 @@ The first step is ensuring that production telemetry is actively monitored whene
 
 **The DevOps maxim:** By using these approaches and the required architecture, we "optimize for MTTR, instead of MTBF" — optimizing for recovering from failures quickly, as opposed to attempting to prevent all failures.
 
-![Figure 16.1: Deployment to Etsy.com Causes PHP Run-Time Warnings and Is Quickly Fixed](../images/Fig16-1.jpg)
+![Figure 16.1: Deployment to Etsy.com Causes PHP Run-Time Warnings and Is Quickly Fixed](images/Fig16-1.jpg)
 *Source: Mike Brittain, "Tracking Every Release."*
 
 **The Etsy example:** Figure 16.1 shows a deployment of a PHP code change at Etsy that generated a spike in PHP runtime warnings. The developer quickly noticed the problem within minutes and generated a fix and deployed it into production, resolving the issue in less than ten minutes.
@@ -237,7 +237,7 @@ This information ensures effective management of not only the technical risks bu
 
 ### The Service Handback Mechanism
 
-![Figure 16.2: The "Service Handback" at Google](../images/Fig16-2.jpg)
+![Figure 16.2: The "Service Handback" at Google](images/Fig16-2.jpg)
 *Source: "SRE@Google: Thousands of DevOps Since 2004," YouTube video, 45:57, posted by USENIX, January 12, 2012.*
 
 For services already in production, a different mechanism ensures that Operations is never stuck with an unsupportable service. This is the **service handback** — when a production service becomes sufficiently fragile, Operations has the ability to return production support responsibility back to Development.
@@ -285,7 +285,7 @@ When a service goes back into a developer-managed state, the role of Operations 
 
 > "Every time we do a launch, we learn something. There will always be some people who are less experienced than others doing releases and launches. The LRR and HRR checklists are a way to create that organizational memory." — Tom Limoncelli
 
-![Figure 16.3: The LRR and HRR at Google](../images/Fig16-3.jpg)
+![Figure 16.3: The LRR and HRR at Google](images/Fig16-3.jpg)
 *Source: "SRE@Google: Thousands of DevOps Since 2004," YouTube video, 45:57, posted by USENIX, January 12, 2012.*
 
 **The teams that succeed fastest:**

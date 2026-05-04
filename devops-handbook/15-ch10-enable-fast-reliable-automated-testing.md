@@ -106,7 +106,7 @@ The chapter opens with an important corrective: as distributed systems have beco
 
 **The deployment pipeline** (first defined by Jez Humble and David Farley in *Continuous Delivery*):
 
-![Figure 10.1: The Deployment Pipeline](../images/Fig10-1.jpg)
+![Figure 10.1: The Deployment Pipeline](images/Fig10-1.jpg)
 *Source: Humble and Farley, Continuous Delivery, 3.*
 
 **Definition:** The deployment pipeline ensures that all code checked into version control is automatically built and tested in a production-like environment. By doing this, we find build, test, or integration errors as soon as a change is introduced, enabling immediate fixes. Done correctly, we are always assured to be in a deployable and shippable state.
@@ -217,7 +217,7 @@ The chapter opens with an important corrective: as distributed systems have beco
 
 **The Testing Pyramid (Martin Fowler):**
 
-![Figure 10.2: The Ideal and Non-Ideal Automated Testing Pyramids](../images/Fig10-2.jpg)
+![Figure 10.2: The Ideal and Non-Ideal Automated Testing Pyramids](images/Fig10-2.jpg)
 *Source: Martin Fowler, "TestPyramid," MartinFowler.com.*
 
 The ideal testing pyramid has the bulk of tests at the unit level, fewer acceptance tests, and the fewest integration/UI tests. In contrast, many organizations have an inverted pyramid (or "ice cream cone") with most investment in manual and integration testing.
@@ -260,7 +260,7 @@ The ideal testing pyramid has the bulk of tests at the unit level, fewer accepta
 
 **The principle:** Design tests to run in parallel, potentially across many servers. Different categories of tests can also run in parallel.
 
-![Figure 10.3: Running Automated and Manual Tests in Parallel](../images/Fig10-3.jpg)
+![Figure 10.3: Running Automated and Manual Tests in Parallel](images/Fig10-3.jpg)
 *Source: Humble and Farley, Continuous Delivery, Kindle edition, location 3868.*
 
 **Parallel testing strategy:**

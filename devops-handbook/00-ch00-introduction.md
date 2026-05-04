@@ -256,7 +256,7 @@ DevOps solution: Right architecture + right technical practices + right cultural
 
 > "Large organizations using DevOps have thousands of developers, but their architecture and practices enable small teams to still be incredibly productive, as if they were a startup." — Randy Shoup (formerly Google, now VP Engineering at eBay)
 
-![Figure 0.1: Deployments per Day vs. Number of Developers](../images/Fig0-1.jpg)
+![Figure 0.1: Deployments per Day vs. Number of Developers](images/Fig0-1.jpg)
 *Source: Puppet Labs, 2015 State of DevOps Report. Only organizations deploying at least once per day shown.*
 
 **Key finding from 2015 State of DevOps Report:**

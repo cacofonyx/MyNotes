@@ -229,7 +229,7 @@ The Gartner bimodal IT framework distinguishes between:
 
 Geoffrey A. Moore's **technology adoption life cycle** from *Crossing the Chasm* provides the framework for understanding organizational receptivity:
 
-![Figure 5.1: The Technology Adoption Curve](../images/Fig5-1.jpg)
+![Figure 5.1: The Technology Adoption Curve](images/Fig5-1.jpg)
 *Source: Moore and McKenna, Crossing the Chasm, 15.*
 
 The spectrum:
@@ -312,7 +312,7 @@ This continues the American Airlines story from Part 1 (Chapter 1). By year thre
 3. **People excellence:** Growing talent and culture (including evolving leadership behaviors)
 4. **Technology excellence:** Modernization (infrastructure, technology foundation, automation, cloud)
 
-![Figure 5.2: American Airlines' Delivery Transformation](../images/Fig5-2.jpg)
+![Figure 5.2: American Airlines' Delivery Transformation](images/Fig5-2.jpg)
 *Source: Maya Leibman and Ross Clanton, "DevOps: Approaching Cruising Altitude," DevOps Enterprise Summit-Virtual Las Vegas 2020.*
 
 **Scaling culture — Three key attributes:**

@@ -121,7 +121,7 @@ The chapter contrasts the old model -- where a security review after development
 
 The chapter highlights **Gauntlt** as an exemplary tool designed to integrate into deployment pipelines. Gauntlt uses Gherkin syntax for security test scripts -- the same syntax developers use for unit and functional testing -- putting security testing in a framework developers are already familiar with.
 
-![Jenkins Running Automated Security Testing](../images/Fig22-1.jpg)
+![Jenkins Running Automated Security Testing](images/Fig22-1.jpg)
 *Figure 22.1: Jenkins Running Automated Security Testing. Source: James Wicket and Gareth Rushgrove, "Battle-tested code without the battle," Velocity 2014 conference presentation.*
 
 > **[Deep Dive: DevSecOps]**
@@ -220,7 +220,7 @@ The consent order had to be implemented within sixty days and enforced for **twe
 
 **Results:** Over the years, Brakeman reduced the rate of vulnerabilities found by **60%**.
 
-![Number of Brakeman Security Vulnerabilities Detected](../images/Fig22-2.jpg)
+![Number of Brakeman Security Vulnerabilities Detected](images/Fig22-2.jpg)
 *Figure 22.2: Number of Brakeman Security Vulnerabilities Detected at Twitter. The spikes are usually associated with new releases of Brakeman that detect additional vulnerability categories.*
 
 > **[Insight]** The Twitter case study illustrates a principle that appears throughout the DevOps Handbook: fast, automated feedback changes behavior. When developers write insecure code and find out about it six months later in a PDF, nothing changes. When they write insecure code and find out within minutes through a pipeline failure with a clear explanation and fix guidance, they learn. The 60% reduction in vulnerabilities was not primarily the result of catching more bugs -- it was the result of developers writing fewer bugs because they had internalized the security patterns through continuous feedback. This is the Third Way (continual learning and experimentation) applied to security.
@@ -249,7 +249,7 @@ The **2019 Sonatype State of the Software Supply Chain Report** (co-authored by 
 - **47%** of components had at least one vulnerability when the component and all its transitives were analyzed
 - The **median time to remediate** software vulnerabilities was **326 days**
 
-![Time to Remediate vs. Time to Update Dependencies](../images/Fig22-3.jpg)
+![Time to Remediate vs. Time to Update Dependencies](images/Fig22-3.jpg)
 *Figure 22.3: Time to Remediate (TTR) vs. Time to Update Dependencies (TTU). Projects that update more frequently tend to remediate their security vulnerabilities faster. Source: Sonatype, 2019 Software Supply Chain Report.*
 
 This correlation between update frequency and vulnerability remediation speed is why Jeremy Long, founder of OWASP Dependency Check, suggests that **the best security patching strategy is to remain current on all dependencies**. He speculates that "only 25% of organizations report vulnerabilities to users, and only 10% of vulnerabilities are reported as Common Vulnerabilities and Exposures (CVE)."
@@ -264,7 +264,7 @@ The 2019 study identified **five behavioral clusters** for open-source projects:
 - **Features first:** Frequent releases but poor TTU, still reasonably popular
 - **Cautious:** Good TTU but seldom completely up to date
 
-![Five Behavioral Clusters for Open-Source Projects](../images/Fig22-4.jpg)
+![Five Behavioral Clusters for Open-Source Projects](images/Fig22-4.jpg)
 *Figure 22.4: Five Behavioral Clusters for Open-Source Projects. Source: Sonatype, 2019 Software Supply Chain Report.*
 
 The **2020 State of the Software Supply Chain Report** compared high-performing vs. low-performing clusters and found dramatic differences:
@@ -391,7 +391,7 @@ Three examples of security telemetry at Etsy:
 
 3. **Indications of SQL injection attacks:** "This was a ridiculously simple test -- we'd merely alert whenever 'UNION ALL' showed up in user-input fields, since it almost always indicates a SQL injection attack. We also added unit tests to make sure that this type of uncontrolled user input could never be allowed into our database queries."
 
-![Developers See SQL Injection Attempts in Graphite at Etsy](../images/Fig22-5.jpg)
+![Developers See SQL Injection Attempts in Graphite at Etsy](images/Fig22-5.jpg)
 *Figure 22.5: Developers See SQL Injection Attempts in Graphite at Etsy. Source: Nick Galbreath, "DevOpsSec: Applying DevOps Principles to Security, DevOpsDays Austin 2012."*
 
 Galbreath's observation about the transformative effect:

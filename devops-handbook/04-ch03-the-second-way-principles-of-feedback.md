@@ -151,7 +151,7 @@ According to **Elisabeth Hendrickson** in her 2015 DevOps Enterprise Summit pres
 
 Each type takes a different amount of time. Think of it as a series of concentric circles — the fastest loops are at the developer's station (local tests, test-driven development) and the longest are customer/user feedback at the very end of the cycle.
 
-![Figure 3.1: Feedback Cycle Times](../images/Fig3-1.jpg)
+![Figure 3.1: Feedback Cycle Times](images/Fig3-1.jpg)
 *Source: Hendrickson, Elisabeth. "DOES15 — Elisabeth Hendrickson — Its All About Feedback." Posted by DevOps Enterprise Summit, November 5, 2015. YouTube video, 34:47. https://www.youtube.com/watch?v=r2BFTXBundQ.*
 
 > **[Deep Dive: The Concentric Circles of Feedback — Speed and Cost]**
@@ -281,7 +281,7 @@ This subtle reframing made a huge difference. "Stuck" implies personal failure; 
 
 Each time pulls dropped, the team found new ways to incentivize them — and each time, cycle times decreased with increased pulls. The team eventually moved from experiment to practice to product-wide scaling, using "Andon: Code Red" for major issues.
 
-![Figure 3.2: Cycle Time vs. Andon Pulls at Excella](../images/Fig3-2.jpg)
+![Figure 3.2: Cycle Time vs. Andon Pulls at Excella](images/Fig3-2.jpg)
 *Source: Zach Ayers and Joshua Cohen. "Andon Cords in Development Teams — Driving Continuous Learning," presentation at the DevOps Enterprise Summit Las Vegas, 2019. https://videolibrary.doesvirtual.com/?video=504281981.*
 
 **Beyond cycle time — psychological safety:**

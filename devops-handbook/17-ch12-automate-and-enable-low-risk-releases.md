@@ -31,7 +31,7 @@ This is the longest and most practice-dense chapter in the book. It covers the f
 
 The chapter opens with **Chuck Rossi**, Director of Release Engineering at Facebook, describing their daily code push process (2012): starting at 1 PM, the team enters "operations mode." All developers with changes going out must be present and check in on IRC — **any developers not present have their changes automatically removed** from the deployment package. If test dashboards and canary tests are green, they "push the big red button and the entire Facebook.com server fleet gets the new code delivered. Within twenty minutes, thousands and thousands of machines are up on new code with no visible impact to the people using the site."
 
-![Figure 12.1: Number of Developers Deploying per Week at Facebook](../images/Fig12-1.jpg)
+![Figure 12.1: Number of Developers Deploying per Week at Facebook](images/Fig12-1.jpg)
 *Source: Chuck Rossi, "Ship early and ship twice as often."*
 
 Rossi later doubled release frequency to twice daily, giving engineers not on US West Coast the ability to "move and ship as quickly as any other engineer in the company."
@@ -92,7 +92,7 @@ They also made non-production environments match production as closely as possib
 - Deployments became so routine that **"the Ops team was playing video games by the end of the first day"**
 - 50% of the time, customers received value in half the time
 
-![Figure 12.2: Daily Deployments at CSG International](../images/Fig12-2.jpg)
+![Figure 12.2: Daily Deployments at CSG International](images/Fig12-2.jpg)
 *Daily deployments and increasing release frequency resulted in decreased incidents and MTTR. Source: Scott Prugh & Erica Morrison, DOES15.*
 
 > **[Deep Dive: Why More Frequent Deployments Reduce Incidents — The Math]**
@@ -134,7 +134,7 @@ The deployment pipeline must provide:
 
 DORA 2019 data: elite performers deploy on demand with lead times in minutes/hours; lowest performers have lead times measured in months.
 
-![Figure 12.3: Elite and High Performers Achieve Faster Deployment Lead Times and MTTR (2019)](../images/Fig12-3.jpg)
+![Figure 12.3: Elite and High Performers Achieve Faster Deployment Lead Times and MTTR (2019)](images/Fig12-3.jpg)
 *Source: Forsgren et al., Accelerate: State of DevOps Report, 2019.*
 
 ### Case Study: Etsy Self-Service Developer Deployment (2014)
@@ -153,7 +153,7 @@ Unlike Facebook's release-engineer-managed deployments, at Etsy **anyone** could
 7. When it's their turn: press "Prod" button in **Deployinator** (internal tool)
 8. Everyone in IRC and email gets notification with diff link
 
-![Figure 12.4: The Deployinator Console at Etsy](../images/Fig12-4.jpg)
+![Figure 12.4: The Deployinator Console at Etsy](images/Fig12-4.jpg)
 *Source: Erik Kastner, "Quantum of Deployment," CodeasCraft.com, 2010.*
 
 **Evolution:** In 2009, Etsy deployments caused stress and fear. By 2011, 25-50 deploys per day, routine operation.
@@ -195,7 +195,7 @@ These require no application code changes — implemented entirely at the infras
 
 Two production environments (blue and green). Only one serves customer traffic at any time.
 
-![Figure 12.5: Blue-Green Deployment Patterns](../images/Fig12-5.jpg)
+![Figure 12.5: Blue-Green Deployment Patterns](images/Fig12-5.jpg)
 *Source: Humble and North, Continuous Delivery, 261.*
 
 **Process:** Deploy to inactive environment → test → switch traffic (change router/load balancer setting) → inactive becomes new staging. **Rollback:** Switch traffic back.
@@ -250,7 +250,7 @@ Dan Terhorst-North and Dave Farley applied blue-green deployments to **thousands
 
 **Canary release:** Automates promotion to successively larger, more critical environments while monitoring performance. Named after coal miners' canaries.
 
-![Figure 12.6: The Canary Release Pattern](../images/Fig12-6.jpg)
+![Figure 12.6: The Canary Release Pattern](images/Fig12-6.jpg)
 *Source: Humble and Farley, Continuous Delivery, 263.*
 
 Facebook's canary groups:
@@ -377,7 +377,7 @@ DORA's research shows continuous delivery is a key predictor of elite performanc
 - Release incidents were only **2%** of all incidents — **98% were in production operations**
 - 92% of production incidents were quick restorations fixed by operations
 
-![Figure 12.7: How Structure Influences Behavior and Quality](../images/Fig12-7.jpg)
+![Figure 12.7: How Structure Influences Behavior and Quality](images/Fig12-7.jpg)
 *Image courtesy of Scott Prugh.*
 
 **Prugh's diagnostic questions:**
@@ -389,10 +389,10 @@ DORA's research shows continuous delivery is a key predictor of elite performanc
 
 **Solution:** Created **"Service Delivery Teams"** that build AND run the software — bringing Dev and Ops onto one team.
 
-![Figure 12.8: From Siloed Approach to Cross-Functional Teams](../images/Fig12-8.jpg)
+![Figure 12.8: From Siloed Approach to Cross-Functional Teams](images/Fig12-8.jpg)
 *Image courtesy of Scott Prugh.*
 
-![Figure 12.9: Conventional vs. Cross-Functional Structure](../images/Fig12-9.jpg)
+![Figure 12.9: Conventional vs. Cross-Functional Structure](images/Fig12-9.jpg)
 *Image courtesy of Scott Prugh.*
 
 **Erica Morrison (VP Software Engineering) on the experience of Dev leaders discovering Ops reality:**

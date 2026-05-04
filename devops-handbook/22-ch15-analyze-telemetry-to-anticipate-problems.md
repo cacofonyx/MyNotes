@@ -65,7 +65,7 @@ The solution: increase the **signal-to-noise ratio** by focusing on variances or
 
 **Example -- unauthorized login attempts per day:** If this data has a **Gaussian distribution** (normal/bell curve), we can apply standard deviation rules effectively.
 
-![Figure 15.1: Standard Deviations and Mean with Gaussian Distribution](../images/Fig15-1.jpg)
+![Figure 15.1: Standard Deviations and Mean with Gaussian Distribution](images/Fig15-1.jpg)
 *Source: Wikipedia, "Normal Distribution"*
 
 Figure 15.1 shows the classic bell curve with the mean (mu) at center. The key properties:
@@ -145,14 +145,14 @@ This is the critical section of the chapter. While means and standard deviations
 
 **Example -- file downloads per minute:** We want to detect unusually high download rates (greater than three standard deviations from average) so we can proactively add capacity.
 
-![Figure 15.2: Downloads per Minute -- Over-Alerting when Using "Three Standard Deviations" Rule](../images/Fig15-2.jpg)
+![Figure 15.2: Downloads per Minute -- Over-Alerting when Using "Three Standard Deviations" Rule](images/Fig15-2.jpg)
 *Source: Dr. Toufic Boubez, "Simple math for anomaly detection."*
 
 Figure 15.2 shows downloads per minute over time with an alerting bar overlaid. When the bar is dark, the metric is at least three standard deviations from the average. The obvious problem: **alerts are firing almost all the time**. The metric constantly spikes past the three-sigma threshold, making the alert meaningless through sheer volume.
 
 To understand why, examine the histogram of the same data:
 
-![Figure 15.3: Downloads per Minute -- Histogram Showing Non-Gaussian Distribution](../images/Fig15-3.jpg)
+![Figure 15.3: Downloads per Minute -- Histogram Showing Non-Gaussian Distribution](images/Fig15-3.jpg)
 *Source: Dr. Toufic Boubez, "Simple math for anomaly detection."*
 
 Figure 15.3 reveals the data does **not** have the classic symmetrical bell curve shape. Instead, it is **heavily skewed** toward the lower end -- the majority of the time there are very few downloads per minute, but download counts frequently spike well above three standard deviations.
@@ -200,7 +200,7 @@ Netflix developed **Scryer**, a predictive auto-scaling engine designed to overc
 
 **Key insight:** Netflix discovered that their consumer viewing patterns were **surprisingly consistent and predictable** despite not having Gaussian distributions.
 
-![Figure 15.4: Netflix Customer Viewing Demand for Five Days](../images/Fig15-4.jpg)
+![Figure 15.4: Netflix Customer Viewing Demand for Five Days](images/Fig15-4.jpg)
 *Source: Jacobson, Yuan, and Joshi, "Scryer: Netflix's Predictive Auto Scaling Engine," The Netflix Tech Blog, November 5, 2013*
 
 Figure 15.4 shows customer requests per second Monday through Friday. The pattern is remarkably regular: low overnight, rising through the morning, peaking in the evening, then declining. The shape repeats daily with minor variations.
@@ -212,7 +212,7 @@ Figure 15.4 shows customer requests per second Monday through Friday. The patter
 
 The result: Netflix could forecast traffic demand with surprising accuracy and pre-provision the necessary compute capacity.
 
-![Figure 15.5: Netflix Scryer Forecasting Customer Traffic and the Resulting AWS Schedule of Compute Resources](../images/Fig15-5.jpg)
+![Figure 15.5: Netflix Scryer Forecasting Customer Traffic and the Resulting AWS Schedule of Compute Resources](images/Fig15-5.jpg)
 *Source: Jacobson, Yuan, and Joshi, "Scryer: Netflix's Predictive Auto Scaling Engine."*
 
 Figure 15.5 shows two panels side by side: the left panel shows the predicted workload (a smooth curve of expected traffic), and the right panel shows the resulting auto-scaling plan (a staircase pattern of instance count, stepping up and down to match predicted demand).
@@ -249,7 +249,7 @@ One key technique is **smoothing**, especially useful for time-series data (data
 
 **Moving averages** (or rolling averages) transform data by averaging each point with all the other data within a **sliding window**. This smooths out short-term fluctuations and highlights longer-term trends or cycles.
 
-![Figure 15.6: Autodesk Share Price and Thirty-Day Moving Average Filter](../images/Fig15-6.jpg)
+![Figure 15.6: Autodesk Share Price and Thirty-Day Moving Average Filter](images/Fig15-6.jpg)
 *Source: Jacobson, Yuan, and Joshi, "Scryer: Netflix's Predictive Auto Scaling Engine."*
 
 Figure 15.6 shows an example of smoothing: the light (jagged) line is the raw data, and the dark (smooth) line is the thirty-day moving average. The moving average visually filters out day-to-day noise and reveals the underlying trend clearly.
@@ -308,7 +308,7 @@ At **Monitorama 2014**, Dr. Toufic Boubez demonstrated the power of the Kolmogor
 
 **Scenario:** Transaction volume per minute at an e-commerce site, tracked over several weeks.
 
-![Figure 15.7: Transaction Volume -- Under-Alerting Using "Three Standard Deviations" Rule](../images/Fig15-7.jpg)
+![Figure 15.7: Transaction Volume -- Under-Alerting Using "Three Standard Deviations" Rule](images/Fig15-7.jpg)
 *Source: Dr. Toufic Boubez, "Simple math for anomaly detection."*
 
 Figure 15.7 shows transaction volume with clear **weekly periodicity** -- volume rises on weekdays and drops on weekends. Visual inspection reveals something peculiar: in the fourth week, normal transaction volume **does not return to normal levels on Monday**. This is a significant anomaly that demands investigation.
@@ -323,7 +323,7 @@ But the substantive point is profound:
 
 > "These types of non-parametric techniques are great for Operations data, because it makes no assumptions about normality or any other probability distribution, which is crucial for us to understand what's going on in our very complex systems. These techniques compare two probability distributions, allowing us to compare periodic or seasonal data, which helps us find variances in data that varies from day to day or week to week."
 
-![Figure 15.8: Transaction Volume -- Using Kolmogorov-Smirnov Test to Alert on Anomalies](../images/Fig15-8.jpg)
+![Figure 15.8: Transaction Volume -- Using Kolmogorov-Smirnov Test to Alert on Anomalies](images/Fig15-8.jpg)
 *Source: Dr. Toufic Boubez, "Simple math for anomaly detection."*
 
 Figure 15.8 shows the same data set with the K-S filter applied. Now three alerts are generated -- the third one correctly highlighting the anomalous Monday where transaction volume did not return to normal levels. The annotation reads: "KS filter detects the anomalous drop in traffic."

@@ -179,7 +179,7 @@ The chapter introduces the **ASREDS Learning Loop** from *Sooner Safer Happier* 
 5. **D**istill the results into insights and metrics
 6. **S**hare the results by publishing learnings so others can pick them up again at the Sense stage
 
-![Figure 21.1: The ASREDS Learning Loop](../images/Fig21-1.jpg)
+![Figure 21.1: The ASREDS Learning Loop](images/Fig21-1.jpg)
 *Source: Smart et al., Sooner Safer Happier: Antipatterns and Patterns for Business Agility (Portland, OR: IT Revolution, 2020)*
 
 > **[Deep Dive: The ASREDS Loop as an Anti-Silo Mechanism]**

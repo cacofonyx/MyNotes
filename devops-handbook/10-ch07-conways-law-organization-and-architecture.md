@@ -143,7 +143,7 @@ This enables each service team to deliver value without opening tickets with IT 
 
 **Research support:** DORA's 2018 and 2019 *State of DevOps Reports* found that teams see superior performance in speed and stability when functional work like database change management, QA, and Infosec is integrated throughout the software delivery process.
 
-![Figure 7.1: Functional vs. Market Orientation](../images/Fig7-1.jpg)
+![Figure 7.1: Functional vs. Market Orientation](images/Fig7-1.jpg)
 *Left: Functional orientation -- all work flows through centralized IT Operations. Right: Market orientation -- all product teams can deploy their loosely coupled components self-service into production. Source: Humble, Molesky, and O'Reilly, Lean Enterprise.*
 
 > **[Deep Dive: The Inverse Conway Maneuver]**

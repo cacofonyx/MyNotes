@@ -26,7 +26,7 @@ This chapter shifts reliance away from periodic inspections and heavyweight appr
 
 The chapter opens with **GitHub's peer review process** as a model: pull requests let engineers tell others about changes, review them, discuss modifications, and push follow-up commits. Engineers request "+1" or "+2" reviews and @mention specific reviewers.
 
-![Figure 18.1: Comments and Suggestions on a GitHub Pull Request](../images/Fig18-1.jpg)
+![Figure 18.1: Comments and Suggestions on a GitHub Pull Request](images/Fig18-1.jpg)
 *Source: Scott Chacon, "GitHub Flow," ScottChacon.com, August 31, 2011.*
 
 **GitHub Flow — five steps:**
@@ -178,7 +178,7 @@ Mandatory code reviews cover:
 - Ownership assignments for code sub-trees
 - Code transparency and contributions across teams
 
-![Figure 18.2: Size of Change vs. Lead Time for Reviews at Google](../images/Fig18-2.jpg)
+![Figure 18.2: Size of Change vs. Lead Time for Reviews at Google](images/Fig18-2.jpg)
 *Source: Ashish Kumar, "Development at the Speed and Scale of Google," QCon 2010.*
 
 The chart shows: larger changes require longer review lead times. Upper-left data points = complex, risky changes requiring more deliberation.

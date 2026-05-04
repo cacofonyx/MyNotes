@@ -280,7 +280,7 @@ With the help of **Jonathan Smart** (Sooner Safer Happier author) and his team f
 
 Nationwide made it easy for members to tell them what they wanted. Then they brought together all the people and tools necessary into a **single team** to make that "want." Everyone on the team can see all the work. They organize themselves to smooth the path and optimize delivery in a safe, controlled, and sustainable manner. If a bottleneck appears, they add people or change the process -- they do **not** add a queuing mechanism as a first response.
 
-![Figure 8.1: Functional Teams in Silos vs. Long-Lived, Multiskilled Teams](../images/Fig8-1.jpg)
+![Figure 8.1: Functional Teams in Silos vs. Long-Lived, Multiskilled Teams](images/Fig8-1.jpg)
 *Source: Chapman, Janet, and Patrick Eltridge. "On A Mission: Nationwide Building Society," presentation at DevOps Enterprise Summit-Virtual London 2020.*
 
 **Results:** By moving from functional teams in silos to long-lived, multiskilled teams, Nationwide saw:

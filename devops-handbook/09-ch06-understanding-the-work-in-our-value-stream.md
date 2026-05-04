@@ -167,7 +167,7 @@ The first pass should consist only of **high-level process blocks** — typicall
 - **Lead time** and **process time** for a work item to be completed
 - **%C/A** (percent complete and accurate) as measured by downstream consumers
 
-![Figure 6.1: An Example of a Value Stream Map](../images/Fig6-1.jpg)
+![Figure 6.1: An Example of a Value Stream Map](images/Fig6-1.jpg)
 *Source: Humble, Molesky, and O'Reilly, Lean Enterprise, 139.*
 
 > **[Insight]** The instruction to limit the first pass to 5-15 process blocks is not about simplicity for its own sake — it is about preventing analysis paralysis. Value stream mapping can expand indefinitely if you try to capture every sub-step, exception path, and edge case. The first map should be "good enough to act on," not "complete." The goal is to identify the biggest constraints, not to document every detail. Teams that spend weeks creating a perfect map before acting on it are, ironically, violating the very principles they're trying to adopt (small batches, fast feedback, iterate). Map quickly, identify the worst bottleneck, fix it, re-map. The map is a living document, not a deliverable.
@@ -274,7 +274,7 @@ Like a startup doing product/customer development, the initiative should generat
 
 > "The deal [between product owners and] engineering goes like this: Product management takes 20% of the team's capacity right off the top and gives this to engineering to spend as they see fit. They might use it to rewrite, re-architect, or re-factor problematic parts of the code base . . . whatever they believe is necessary to avoid ever having to come to the team and say, 'we need to stop and rewrite [all our code].' If you're in really bad shape today, you might need to make this 30% or even more of the resources. However, I get nervous when I find teams that think they can get away with much less than 20%." — Marty Cagan, *Inspired*
 
-![Figure 6.2: Invest 20% of Capacity in those Who Create Positive, User-Invisible Value](../images/Fig6-2.jpg)
+![Figure 6.2: Invest 20% of Capacity in those Who Create Positive, User-Invisible Value](images/Fig6-2.jpg)
 *Source: "Machine Learning and Technical Debt with D. Sculley," Software Engineering Daily podcast, November 17, 2015.*
 
 **The consequence of not paying the 20% tax:** Technical debt increases to the point where the organization spends **all** its cycles paying down debt. Services become so fragile that feature delivery grinds to a halt because all engineers are working on reliability issues or workarounds. Additionally, the accumulated pressure of technical debt contributes to increased burnout.

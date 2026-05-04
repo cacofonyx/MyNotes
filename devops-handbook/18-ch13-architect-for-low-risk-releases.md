@@ -87,7 +87,7 @@ The chapter contrasts tightly coupled architecture (which impedes everyone) with
 - Creation of contracts and SLAs between teams
 - Independent deployment
 
-![Figure 13.1: Google Cloud Datastore](../images/Fig13-1.jpg)
+![Figure 13.1: Google Cloud Datastore](images/Fig13-1.jpg)
 *Source: Shoup, "From the Monolith to Micro-services."*
 
 Randy Shoup describes how this works at Google:
@@ -272,7 +272,7 @@ Martin Fowler underscores the risk of rewrites:
 
 Ashman used data from the source code repository going back to 2005 to make the problem visible.
 
-![Figure 13.2: Blackboard Learn Code Repository: Before Building Blocks](../images/Fig13-2.jpg)
+![Figure 13.2: Blackboard Learn Code Repository: Before Building Blocks](images/Fig13-2.jpg)
 *Source: "DOES14 -- David Ashman -- Blackboard Learn -- Keep Your Head in the Clouds," YouTube video, DevOps Enterprise Summit 2014*
 
 **Key observation from Figure 13.2:** The top graph shows lines of code continuing to increase, while the bottom graph shows code commits starting to decrease. The codebase was growing, but developers were making fewer changes -- objective evidence that the architecture was making it increasingly difficult to introduce changes.
@@ -290,7 +290,7 @@ Ashman's team implemented a code re-architecting project using the **strangler f
 - The size of the monolith source code repository began to **decrease** (developers moved code into Building Block modules)
 - Every developer given a choice **preferred working in the Building Block codebase** where they had more autonomy, freedom, and safety
 
-![Figure 13.3: Blackboard Learn Code Repository: After Building Blocks](../images/Fig13-3.jpg)
+![Figure 13.3: Blackboard Learn Code Repository: After Building Blocks](images/Fig13-3.jpg)
 *Source: "DOES14 -- David Ashman -- Blackboard Learn -- Keep Your Head in the Clouds," YouTube video, DevOps Enterprise Summit 2014*
 
 **Key observation from Figure 13.3:** Both lines of code and code commits grew exponentially in the Building Blocks repositories. The new architecture unlocked developer productivity that had been suppressed by the monolith.

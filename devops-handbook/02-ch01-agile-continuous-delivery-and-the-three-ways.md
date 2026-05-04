@@ -92,7 +92,7 @@ Two key measures from the Lean community:
 - **Lead time:** Clock starts when request is made → ends when fulfilled. *This is what the customer experiences.*
 - **Process time** (a.k.a. touch time / task time): Clock starts when work actually begins → ends when complete. Omits queue/wait time.
 
-![Figure 1.1: Lead Time vs. Process Time of a Deployment Operation](../images/Fig1-1.jpg)
+![Figure 1.1: Lead Time vs. Process Time of a Deployment Operation](images/Fig1-1.jpg)
 
 > **[Deep Dive: A Worked Example of Lead Time vs. Process Time]**
 >
@@ -139,7 +139,7 @@ Many organizations, especially large ones with tightly coupled monolithic system
 
 **What happens:** Heroics required at every stage. Nothing works at end of project when merging all changes together — code doesn't build, tests fail. Fixing each problem requires days/weeks of investigation. Poor customer outcomes.
 
-![Figure 1.2: A Technology Value Stream with a Deployment Lead Time of Three Months](../images/Fig1-2.jpg)
+![Figure 1.2: A Technology Value Stream with a Deployment Lead Time of Three Months](images/Fig1-2.jpg)
 *Source: Damon Edwards, "DevOps Kaizen," 2015*
 
 > **[Insight]** The "big bang merge" problem described here is a direct consequence of large batch sizes. When ten developers work on separate feature branches for three months and then merge simultaneously, the combinatorial complexity of integration is enormous — any of those branches might conflict with any other. The fix isn't better merge tooling; it's *not diverging in the first place*. This is the argument for trunk-based development and continuous integration (Chapter 11): by integrating small changes frequently (daily or more), you keep the merge problem trivially small.
@@ -156,7 +156,7 @@ In the DevOps ideal:
 
 **Result:** Deployment lead time measured in minutes (worst case: hours).
 
-![Figure 1.3: A Technology Value Stream with a Lead Time of Minutes](../images/Fig1-3.jpg)
+![Figure 1.3: A Technology Value Stream with a Lead Time of Minutes](images/Fig1-3.jpg)
 
 > **[Insight]** Notice the phrase "independently implement, integrate, validate, and deploy." The word "independently" is carrying enormous weight. It implies that team A can deploy without coordinating with teams B, C, and D — no shared deployment windows, no cross-team integration testing, no "release trains." This level of independence requires both a loosely coupled architecture (so changes don't cascade across services) and a robust automated testing pipeline (so each team can validate their changes in isolation). When organizations say "we can't do DevOps because we have a monolith," what they really mean is "our architecture doesn't permit independent deployment." Chapter 13 addresses how to architect for this.
 
@@ -216,7 +216,7 @@ When measuring end-to-end value stream performance, **avoid proxy metrics** (lin
 
 Presented originally in *The Phoenix Project*, the Three Ways are the set of principles from which **all observed DevOps behaviors and patterns are derived.**
 
-![Figure 1.4: The Three Ways](../images/Fig1-4.jpg)
+![Figure 1.4: The Three Ways](images/Fig1-4.jpg)
 *Source: Gene Kim, "The Three Ways: The Principles Underpinning DevOps," ITRevolution.com, August 22, 2012*
 
 > **[Deep Dive: The Three Ways as a System]**
@@ -359,7 +359,7 @@ The finance approval process was cumbersome:
 
 **Experimentation:** Finance gave four product teams a set budget for the year. Teams defined OKRs and used budget for top priorities. Allowed testing before rollout, focused on accountability and outcomes. Finance gained even more visibility. Success → scaled new model across all products → new funding process.
 
-![Figure 1.5: American Airlines' DevOps Transformation Journey](../images/Fig1-5.jpg)
+![Figure 1.5: American Airlines' DevOps Transformation Journey](images/Fig1-5.jpg)
 *Source: With permission of Ross Clanton*
 
 > "This was a huge accelerator in our journey." — Leibman

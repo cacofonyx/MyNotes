@@ -50,7 +50,7 @@ The chapter anchors Etsy's story with hard data from DORA:
 - In the **2015 State of DevOps Report**, high performers resolved production incidents **168 times faster** than their peers, with the median performer having an MTTR measured in **minutes**, while the low performer had an MTTR measured in **days**.
 - In DORA's **2019 State of DevOps Report**, elite performers resolved production incidents **2,604 times faster** than their low-performing peers, with the median elite performer having an MTTR measured in **minutes**, while the median low performer had an MTTR measured in **weeks**.
 
-![Figure 14.1: Incident Resolution Time for Elite, High, Medium, and Low Performers (2019)](../images/Fig14-1.jpg)
+![Figure 14.1: Incident Resolution Time for Elite, High, Medium, and Low Performers (2019)](images/Fig14-1.jpg)
 *Source: Forsgren et al., Accelerate: State of DevOps (2019).*
 
 > **[Insight]** The 2,604x gap between elite and low performers is not explained by better engineers or better hardware. It is explained by telemetry. Elite performers know what is happening in their systems at all times. Low performers are blind until something catastrophic enough surfaces through customer complaints. The MTTR gap is a *telemetry* gap more than anything else. When you can see the problem, you can fix it in minutes. When you cannot see it, you spend days figuring out what is even wrong.
@@ -92,7 +92,7 @@ The goal is to create telemetry within our applications and environments, both i
 >
 > **Self-Service Access:** Everything should be done through self-service APIs, as opposed to requiring people to open up tickets and wait to get reports.
 
-![Figure 14.2: Monitoring Framework](../images/Fig14-2.jpg)
+![Figure 14.2: Monitoring Framework](images/Fig14-2.jpg)
 *Source: Turnbull, The Art of Monitoring, Kindle edition, chap. 2.*
 
 Adrian Cockcroft made a critical observation about the reliability requirements of monitoring itself:
@@ -227,7 +227,7 @@ StatsD::increment("login.successes")
 
 -- creates a user login event. The resulting graph shows the number of successful and failed logins per minute, with vertical lines overlaid to represent production deployments.
 
-![Figure 14.3: One Line of Code to Generate Telemetry using StatsD and Graphite at Etsy](../images/Fig14-3.jpg)
+![Figure 14.3: One Line of Code to Generate Telemetry using StatsD and Graphite at Etsy](images/Fig14-3.jpg)
 *Source: Ian Malpass, "Measure Anything, Measure Everything."*
 
 When we generate graphs of our telemetry, we **overlay deployment events** because the significant majority of production issues are caused by production changes, including code deployments. This is part of what allows us to have a high rate of change while still preserving a safe system of work.
@@ -368,7 +368,7 @@ Ideally, anyone viewing information radiators should be able to make sense of th
 
 Further business context can be created by displaying time periods relevant to high-level business planning (peak holiday selling seasons, end-of-quarter financial close, scheduled compliance audits). This serves as a reminder to avoid scheduling risky changes when availability is critical.
 
-![Figure 14.4: User Excitement of New Features in User Forum Posts after Deployments](../images/Fig14-4.jpg)
+![Figure 14.4: User Excitement of New Features in User Forum Posts after Deployments](images/Fig14-4.jpg)
 *Source: Mike Brittain, "Tracking Every Release," CodeasCraft.com, December 8, 2010.*
 
 > **[Insight]** Figure 14.4 is a fascinating example of telemetry that bridges the gap between engineering activity and business outcomes. By overlaying deployment markers onto a graph of user forum posts, the team can literally see the customer excitement (or frustration) that each deployment creates. This is the kind of telemetry that makes the feedback loop from Chapter 3 (the Second Way) tangible: you deploy, you see the customer reaction, you learn, you adjust. It also demonstrates that telemetry is not purely a technical concern -- the most valuable telemetry often measures human behavior and business outcomes rather than CPU utilization.

@@ -36,7 +36,7 @@ The invisibility problem is compounded by how easy it is to transfer work in tec
 
 The critical requirement is that the kanban board must **span the entire value stream**, from requirements through development, testing, staging, and into production. Work is defined as completed only when it reaches the right side of the board -- not when Development finishes coding.
 
-![Figure 2.1: An Example Kanban Board Spanning Requirements, Dev, Test, Staging, and In Production](../images/Fig2-1.jpg)
+![Figure 2.1: An Example Kanban Board Spanning Requirements, Dev, Test, Staging, and In Production](images/Fig2-1.jpg)
 *Source: David J. Andersen and Dominica DeGrandis, Kanban for IT Ops, training materials for workshop, 2012.*
 
 Key benefits of making work visible:
@@ -138,7 +138,7 @@ The chapter uses the classic "envelope game" from *Lean Thinking* by James P. Wo
 - First completed envelope produced at: **40 seconds** (8x faster than large batch)
 - If a folding error occurs: detected immediately, only one brochure needs rework.
 
-![Figure 2.2: Simulation of "Envelope Game"](../images/Fig2-2.jpg)
+![Figure 2.2: Simulation of "Envelope Game"](images/Fig2-2.jpg)
 *Source: Stefan Luyten, "Single Piece Flow," Medium.com, August 8, 2014.*
 
 **Small batch sizes result in:** less WIP, faster lead times, faster detection of errors, and less rework.
