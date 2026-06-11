@@ -43,6 +43,8 @@
 | # | Chapter | Core Question |
 |---|---------|---------------|
 | 14 | [Sustained Leadership and Self-Management](14-sustained-leadership.md) | How do you stay effective, avoid burnout, keep growing — not just in month 3, but year 3? |
+| 15 | [Director Mannerisms and Daily Conduct](15-mannerisms-and-conduct.md) | How should you carry yourself — in meetings, on Slack, in conflict, in celebration? |
+| 16 | [Hidden Landmines and Unwritten Rules](16-hidden-landmines.md) | What will nobody tell you, and what can quietly destroy you before you know you stepped wrong? |
 
 ---
 
